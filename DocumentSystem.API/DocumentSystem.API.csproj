@@ -11,7 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\DocumentSystem.Application\DocumentSystem.Application.csproj" />
+    <ProjectReference Include="..\DocumentSystem.Core\DocumentSystem.Core.csproj" />
+    <ProjectReference Include="..\DocumentSystem.DAL\DocumentSystem.DAL.csproj" />
   </ItemGroup>
 
 </Project>
