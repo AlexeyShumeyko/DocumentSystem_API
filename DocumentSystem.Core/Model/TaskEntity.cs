@@ -2,8 +2,8 @@
 {
     public class TaskEntity
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public int PreviousTaskID { get; set; }
+        public required string Id { get; set; }
+        public required string Name { get; set; }
+        public required string PreviousTaskID { get; set; }
     }
 }
