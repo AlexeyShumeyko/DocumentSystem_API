@@ -15,9 +15,9 @@ namespace DocumentSystem.API.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> CompleteTask(int id)
+        public async Task<IActionResult> CompleteTask(string documentId)
         {
-            var result = await _taskService.CompleteTaskAsync(id);
+            var result = await _taskService.CompleteTaskAsync(documentId);
 
             if (!result)
                 return NotFound();
@@ -26,9 +26,9 @@ namespace DocumentSystem.API.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> CancelDocument(int id)
+        public async Task<IActionResult> CancelDocument(string documentId)
         {
-            var result = await _taskService.CancelDocumentAsync(id);
+            var result = await _taskService.CancelDocumentAsync(documentId);
 
             if (!result) 
                 return NotFound();
